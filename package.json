@@ -1,0 +1,13 @@
+{
+  "name": "com.dropecho.common",
+  "displayName": "Dropecho Common",
+  "description": "Common components for use in games.",
+  "author": "vantreeseba <vantreeseba@gmail.com>",
+  "version": "0.1.0",
+  "repository": "github:dropecho/unity_common",
+  "type": "library",
+  "license": "MIT",
+  "dependencies": {
+    "com.unity.multiplayer.mlapi": "0.1.0"
+  }
+}
