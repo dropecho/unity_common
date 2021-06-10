@@ -1,7 +1,6 @@
 using MLAPI;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityStandardAssets.Characters.ThirdPerson;
 
 namespace Dropecho {
   [RequireComponent(typeof(NavMeshAgent))]

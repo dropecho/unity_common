@@ -8,6 +8,7 @@
   "type": "library",
   "license": "MIT",
   "dependencies": {
+    "com.dropecho.utils": "0.3.0",
     "com.unity.multiplayer.mlapi": "0.1.0"
   }
 }

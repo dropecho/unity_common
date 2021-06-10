@@ -1,6 +1,8 @@
 {
     "name": "Dropecho.Common",
-    "references": [],
+    "references": [
+        "Unity.Multiplayer.MLAPI.Runtime"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
