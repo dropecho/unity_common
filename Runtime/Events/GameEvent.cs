@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Dropecho {
-  [CreateAssetMenu(menuName = "Dropecho/GameEvent", fileName = "New Game Event")]
+ [CreateAssetMenu(menuName = "Dropecho/GameEvent", fileName = "New Game Event")]
   public class GameEvent : ScriptableObject {
     HashSet<GameEventListener> _listeners = new HashSet<GameEventListener>();
 

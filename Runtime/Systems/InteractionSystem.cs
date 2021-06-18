@@ -7,6 +7,7 @@ using UnityEngine.Events;
 
 namespace Dropecho {
   public class InteractionSystem : MonoBehaviour {
+    public List<InteractionEvent> RegisteredEvents;
     static Dictionary<InteractionEvent, HashSet<InteractionObserver>> _observers;
     static Dictionary<InteractionEvent, UnityAction<Interactor, Interactable>> _delegates;
 
@@ -20,6 +21,7 @@ namespace Dropecho {
     void Awake() {
       var events = Resources.FindObjectsOfTypeAll<InteractionEvent>();
       foreach (var ev in events) {
+        RegisteredEvents.Add(ev);
         var evName = $"On{ev.name}";
         var methodInfo = GetType().GetMethod(evName);
         if (methodInfo == null) {
